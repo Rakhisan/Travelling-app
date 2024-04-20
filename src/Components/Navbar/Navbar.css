@@ -1,0 +1,231 @@
+:root {
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+}
+
+.navBarSection .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.navBarSection .activeHeader {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45);
+}
+
+.navBarSection .activeHeader .toggleNavbar .icon {
+    color: rgb(67, 143, 236);
+}
+
+.navBarSection .activeHeader .logoDiv .logo {
+    color: rgb(67, 143, 236);
+}
+
+.navBarSection .activeHeader .loginBtn a {
+    color: rgb(67, 143, 236);
+}
+
+.navBarSection .activeHeader .loginBtn a:hover {
+    color: rgb(250, 250, 250);
+}
+
+.navBarSection .activeHeader .signupBtn a {
+    color: rgb(240, 243, 246);
+}
+
+.navBarSection .activeHeader .signupBtn:hover {
+    background: none;
+    border: 1px solid rgb(67, 143, 236);
+    color: rgb(67, 143, 236);
+}
+
+.navBarSection .activeHeader .signupBtn a:hover {
+    color: rgb(67, 143, 236);
+}
+
+.navBarSection .activeHeader.header .navBar .navList .navItems .navLinks {
+    color: rgb(113, 113, 113);
+}
+
+
+.navBarSection .logoDiv .logo {
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBarSection .logoDiv .logo .icon {
+    color: rgb(0, 107, 238);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .navBar {
+        background: rgb(196, 210, 227);
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        top: 0;
+        left: -500%;
+        box-shadow: 0 2px 4px rgb(209, 209, 209, 0.904);
+        transition: .5s ease;
+        z-index: 1000;
+    }
+
+    .navList {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navItems {
+        padding: 1rem 0;
+    }
+
+    .navLinks {
+        color: rgb(125, 125, 125);
+        font-size: .9rem;
+        font-weight: 500;
+    }
+
+    .navLinks:hover {
+        color: rgb(67, 143, 236);
+        ;
+    }
+
+    .headerBtns {
+        flex-direction: column;
+    }
+
+    .headerBtns .btn {
+        margin-top: 1rem;
+    }
+
+    .loginBtn {
+        background: none;
+        border: 1px solid rgb(67, 143, 236);
+
+    }
+
+    .loginBtn a {
+        color: rgb(67, 143, 236);
+
+    }
+
+    .signupBtn:hover {
+        background: none;
+        border: 1px solid rgb(67, 143, 236);
+        color: rgb(67, 143, 236);
+    }
+
+    .loginBtn:hover {
+        background: rgb(67, 143, 236);
+
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: rgb(67, 143, 236);
+        cursor: pointer;
+    }
+
+    .toggleNavbar {
+        cursor: pointer;
+    }
+
+    .closeNavbar:hover {
+        color: rgb(67, 143, 236);
+    }
+
+    .activeNavbar {
+        left: 0;
+    }
+}
+
+.toggleNavbar .icon {
+    font-size: 25px;
+    color: #fff;
+
+}
+
+.toggleNavbar .icon:hover {
+    color: rgb(67, 143, 236);
+}
+
+@media screen and (min-width:769px) {
+
+    .toggleNavbar,
+    .closeNavbar {
+        display: none;
+    }
+
+    .navBarSection .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .navBarSection .header .navBar .navList {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .navBarSection .header .navBar .navList .navItems .navLinks {
+        color: #fff;
+        padding: 0 0.45rem;
+        font-size: .9rem;
+        font-weight: 400;
+    }
+
+    .navBarSection .header .navBar .navList .navItems .navLinks:hover {
+        color: rgb(67, 143, 236);
+    }
+
+    .navBarSection .header .navBar .navList .btn {
+        margin-left: 1rem;
+    }
+
+    .navBarSection .header .navBar .navList .loginBtn {
+        background: none;
+        border: 1px solid rgb(67, 143, 236);
+    }
+
+    .navBarSection .header .navBar .navList .loginBtn:hover {
+        background: rgb(67, 143, 236);
+    }
+
+    .navBarSection .header .navBar .navList .signupBtn:hover {
+        background: none;
+        border: 1px solid rgb(67, 143, 236);
+    }
+
+}
+
+@media screen and (min-width:960px) {
+    .header .navBar .navList .navItems {
+        padding: 0 .7rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header {
+        padding: 1rem 0.5rem;
+    }
+}

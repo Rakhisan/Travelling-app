@@ -1,0 +1,100 @@
+:root {
+    --PrimaryColor: hsl(26, 93%, 50%);
+    --HoverColor: hsl(26, 90%, 42%);
+}
+
+.about .secContainer .title {
+    color: black;
+    line-height: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.about .secContainer .mainContent {
+    gap: 1rem;
+}
+
+.about .secContainer .mainContent .singleItem {
+    text-align: center;
+}
+
+.about .secContainer .mainContent .singleItem .icons {
+    background: rgba(67, 143, 236, 0.279);
+    font-size: 6rem;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+
+.about .secContainer .mainContent .singleItem h3 {
+    font-weight: 700;
+    color: black;
+    padding: .5rem;
+}
+
+.about .secContainer .mainContent .singleItem p {
+    font-size: 13px;
+    font-weight: 500;
+    color: grey;
+    padding-bottom: .5rem;
+}
+
+.about .secContainer .videoCard {
+    margin-top: 2rem;
+    background: linear-gradient(rgba(65, 120, 198, 0.429), rgba(1, 85, 153, 0.609));
+    background-position: center;
+    color: aliceblue;
+}
+
+.about .secContainer .videoCard .cardContent {
+    gap: 2rem;
+    padding: 2rem 3rem;
+}
+
+.about .secContainer .videoCard .cardContent .cardText h2 {
+    color: aliceblue;
+    font-weight: 600;
+    padding-bottom: 1rem;
+
+}
+
+.about .secContainer .videoCard .cardContent .cardText p {
+    color: aliceblue;
+    opacity: .7;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width:720px) {
+    .about .secContainer .videoCard .cardContent {
+        gap: 4rem;
+        padding: 4rem 3rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about .secContainer .videoCard .cardContent .cardText h2 {
+        font-size: 2rem;
+    }
+
+    .about .secContainer .videoCard .cardContent .cardText p {
+        opacity: .7;
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (min-width:1020px) {
+    .about .secContainer .mainContent {
+        padding: 2.5rem 0;
+      
+    }
+
+
+}
+@media screen and (min-width:600px) { 
+    .about .secContainer .mainContent {
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
